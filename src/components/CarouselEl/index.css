@@ -1,0 +1,18 @@
+.carousel-images {
+  width: 80%;
+  height: 200px;
+}
+.carousel {
+  height: 200px;
+}
+.carousel-element {
+  height: 200px;
+  width: 70%;
+  margin: auto;
+}
+.restaurant-offers-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}

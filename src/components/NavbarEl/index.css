@@ -1,0 +1,127 @@
+.navbar-bg {
+  height: 70px;
+  background-color: #f8fafc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+@media screen and (max-width: 768px) {
+  .navbar-bg {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+.home-link {
+  text-decoration: none;
+}
+.tabitems {
+  text-decoration: none;
+}
+.applogo-and-name {
+  display: flex;
+  align-items: center;
+}
+.cookIcon {
+  width: 53px;
+  height: 43px;
+  margin-right: 16px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+@media screen and (max-width: 768px) {
+  .cookIcon {
+    width: 40px;
+    height: 30px;
+    margin-right: 8px;
+  }
+}
+.tastykitchen-heading {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  font-family: 'DM Sans';
+  color: #f7931e;
+}
+@media screen and (max-width: 768px) {
+  .tastykitchen-heading {
+    font-size: 14px;
+  }
+}
+.routeslist {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+.list-item1 {
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'DM Sans';
+  letter-spacing: -0.355556px;
+  line-height: 26px;
+  margin-right: 32px;
+  color: #f7931e;
+}
+@media screen and (max-width: 768px) {
+  .list-item1 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 14px;
+  }
+}
+.list-item2 {
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: bold;
+  font-family: 'DM Sans';
+  letter-spacing: -0.355556px;
+  margin-right: 32px;
+  color: #334155;
+}
+@media screen and (max-width: 768px) {
+  .list-item2 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 14px;
+  }
+}
+.list-item3 {
+  list-style-type: none;
+}
+.logout-button {
+  width: 73px;
+  height: 32px;
+  background-color: #f7931e;
+  border-radius: 8px;
+  border-width: 0px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .logout-button {
+    width: 50px;
+    height: 24px;
+    line-height: 12px;
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar-element {
+    display: none;
+  }
+}
+
+.nav-items-container {
+  display: flex;
+  list-style-type: none;
+}
+.nav-item {
+  margin-left: 10px;
+}

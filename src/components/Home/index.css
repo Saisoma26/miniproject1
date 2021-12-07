@@ -1,0 +1,125 @@
+.home-main-containe {
+  display: flex;
+  flex-direction: column;
+}
+.home-bg {
+  padding: 10px;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .home-bg {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+.popular-restaurants-heading {
+  font-size: 32px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-family: 'DM Sans';
+  color: #183b56;
+}
+@media screen and (max-width: 768px) {
+  .popular-restaurants-heading {
+    font-size: 24px;
+  }
+}
+.description-and-sort-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .description-and-sort-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.description {
+  font-size: 16px;
+  font-weight: 500;
+  color: #64748b;
+  font-family: 'DM Sans';
+}
+@media screen and (max-width: 380px) {
+  .description {
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+.sort-container {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .sort-container {
+    margin-left: -40%;
+  }
+}
+.sort-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+.sort-label {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: 'DM Sans';
+  margin-right: 12px;
+}
+.selectel {
+  border-width: 0px;
+  border-color: white;
+}
+.option {
+  width: 16px;
+  height: 16px;
+  border-color: white;
+}
+.hrline {
+  border: 1px dashed #cbd2d9;
+}
+.restaurants-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+.pagination {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  margin-top: 64px;
+}
+.pagination-buttons {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #334155;
+  background-color: transparent;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.pagination-button-img {
+  width: 7px;
+  height: 7px;
+}
+.activepage-number {
+  font-family: 'Bree Serif';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #334155;
+}
+
+.home-loader {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

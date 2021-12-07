@@ -1,0 +1,90 @@
+.order-container {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.order-details-container {
+  display: flex;
+  align-items: center;
+  width: 83%;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .order-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    margin-left: 10px;
+  }
+}
+.order-image {
+  width: 80px;
+  height: 80px;
+  margin-right: 6px;
+}
+@media screen and (max-width: 768px) {
+  .order-image {
+    max-width: 80px;
+    min-width: 80px;
+    max-height: 80px;
+    min-height: 80px;
+  }
+}
+.order-name {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #183b56;
+}
+@media screen and (max-width: 768px) {
+  .order-name {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+}
+.order-quantity-container {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  margin-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  .order-quantity-container {
+    margin-bottom: 0px;
+  }
+}
+.incredecre-btn {
+  width: 18px;
+  height: 18px;
+  border: 0.75px solid #475569;
+  box-sizing: border-box;
+  border-radius: 2.25px;
+  padding: 1px;
+}
+.order-quantity {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #475569;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+.order-amount {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffa412;
+  width: 30%;
+  margin-left: 0px;
+}
+@media screen and (max-width: 768px) {
+  .order-amount {
+    margin-top: 0px;
+  }
+}
