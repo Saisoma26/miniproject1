@@ -1,4 +1,4 @@
-import {withRouter, Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import './index.css'
 
 const NotFound = () => (
@@ -24,4 +24,4 @@ const NotFound = () => (
   </div>
 )
 
-export default withRouter(NotFound)
+export default NotFound

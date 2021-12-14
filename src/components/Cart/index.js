@@ -37,7 +37,7 @@ class Cart extends Component {
         </p>
         <Link className="order-now-link" to="/">
           <button className="orderNow-button" type="button">
-            Order now
+            Order Now
           </button>
         </Link>
       </div>
@@ -46,7 +46,7 @@ class Cart extends Component {
 
   totalPriceCalculation = () => (
     <CartContext.Consumer>
-      {value => {
+      {() => {
         const cartdetails = JSON.parse(localStorage.getItem('cartData'))
         let sum = 0
         if (cartdetails !== null) {
@@ -111,7 +111,7 @@ class Cart extends Component {
           <button
             className="place-order-button"
             type="button"
-            onClick={this.orderSuccessPage}
+            onClick={this.onClickOrderNow}
           >
             Place Order
           </button>

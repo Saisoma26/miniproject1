@@ -1,0 +1,9 @@
+.carousel-element {
+  height: 200px;
+  width: 70%;
+  margin: auto;
+}
+
+.carousel-list-item {
+  list-style-type: none;
+}

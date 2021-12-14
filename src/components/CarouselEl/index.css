@@ -2,6 +2,11 @@
   width: 80%;
   height: 200px;
 }
+.carousel-list-container {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
 .carousel {
   height: 200px;
 }

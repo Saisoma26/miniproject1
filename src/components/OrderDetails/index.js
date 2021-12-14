@@ -90,7 +90,7 @@ class OrderDetails extends Component {
                   className="order-image"
                 />
                 <div className="order-details-container">
-                  <p className="order-name">{name}</p>
+                  <h1 className="order-name">{name}</h1>
                   <div className="order-quantity-container">
                     <button
                       className="incredecre-btn"

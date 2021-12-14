@@ -37,6 +37,7 @@
 .restaurant-details {
   display: flex;
   flex-direction: column;
+  list-style-type: none;
 }
 @media screen and (max-width: 768px) {
   .restaurant-details {

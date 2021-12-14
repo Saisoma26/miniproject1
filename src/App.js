@@ -14,7 +14,9 @@ class App extends Component {
 
   componentDidMount() {
     const list = JSON.parse(localStorage.getItem('cartData'))
-    this.setState({cartlist: list})
+    if (list !== null) {
+      this.setState({cartlist: list})
+    }
   }
 
   increment = fooditem => {
@@ -45,6 +47,7 @@ class App extends Component {
     const iteminLocalStorage = localstorageItems.filter(
       each => each.id === fooditem.id,
     )
+    console.log(iteminLocalStorage[0].quantity)
     if (iteminLocalStorage[0].quantity === 1) {
       localStorage.setItem('cartData', JSON.stringify(filteredList))
       this.setState({cartlist: filteredList})

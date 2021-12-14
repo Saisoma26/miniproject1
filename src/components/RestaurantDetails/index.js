@@ -92,7 +92,7 @@ class RestaurantDetails extends Component {
       <div className="restaurantDetails-bg">
         <div className="restaurant-intro">
           <img src={imageUrl} alt="restaurant" className="restaurant-img" />
-          <div className="restaurant-details">
+          <ul className="restaurant-details">
             <h1 className="restaurant-name">{name}</h1>
             <p className="restaurant-cuisine">{cuisine}</p>
             <p className="restaurant-location">{location}</p>
@@ -114,7 +114,7 @@ class RestaurantDetails extends Component {
                 <p className="cost-for-two">Cost for two</p>
               </div>
             </div>
-          </div>
+          </ul>
         </div>
         <ul className="food-items-list">
           {foodItems.map(each => (

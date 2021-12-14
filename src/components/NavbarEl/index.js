@@ -14,16 +14,16 @@ class NavbarEl extends Component {
   render() {
     return (
       <div className="navbar-bg">
-        <Link className="home-link" to="/">
-          <div className="applogo-and-name">
+        <div className="applogo-and-name">
+          <Link className="home-link" to="/">
             <img
               src="https://res.cloudinary.com/dekggtreb/image/upload/v1637387863/Frame_274_nst10c.svg"
               className="cookIcon"
               alt="website logo"
             />
-            <h1 className="tastykitchen-heading">Tasty Kitchen</h1>
-          </div>
-        </Link>
+          </Link>
+          <h1 className="tastykitchen-heading">Tasty Kitchen</h1>
+        </div>
         <ul className="routeslist">
           <li className="list-item1">
             <Link to="/" className="tabitems">

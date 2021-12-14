@@ -1,7 +1,9 @@
 import Loader from 'react-loader-spinner'
 import Cookies from 'js-cookie'
 import {Component} from 'react'
-import {Carousel} from 'antd'
+import Slider from 'react-slick'
+import CarouselImage from '../CarouselImage'
+
 import './index.css'
 
 const apiStatusList = {
@@ -33,6 +35,7 @@ class CarouselEl extends Component {
         Authorization: `Bearer ${accessToken}`,
       },
     }
+
     const response = await fetch(url, options)
     if (response.ok) {
       const data = await response.json()
@@ -60,20 +63,21 @@ class CarouselEl extends Component {
   renderCarouselElements = () => {
     const {carousellist} = this.state
     console.log(carousellist)
+    const settings = {
+      dots: true,
+    }
     return (
-      <Carousel autoplay>
+      <Slider {...settings} autoplay>
         {carousellist.map(each => (
-          <div>
-            <img src={each.imageUrl} alt="offer" className="carousel-element" />
-          </div>
+          <CarouselImage imageUrl={each.imageUrl} key={each.id} />
         ))}
-      </Carousel>
+      </Slider>
     )
   }
 
   renderFetchStatus = () => {
     const {fetchStatus} = this.state
-    console.log(fetchStatus)
+
     switch (fetchStatus) {
       case apiStatusList.loading:
         return this.renderloader()

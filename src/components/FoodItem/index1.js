@@ -66,7 +66,7 @@ class FoodItem extends Component {
   additemElement = () => {
     const {count, isactive} = this.state
     const {foodItem} = this.props
-    if (!isactive) {
+    if (count < 1) {
       return (
         <CartContext.Consumer>
           {value => {
@@ -134,7 +134,7 @@ class FoodItem extends Component {
         <img src={imageUrl} alt="food item" className="each-food-item-image" />
         <div className="food-item-details">
           <h1 className="food-item-name">{name}</h1>
-          <p className="cost-of-item">Rs.{cost}.00</p>
+          <p className="cost-of-item">{cost}</p>
           <div className="rating-container">
             <img
               src="https://res.cloudinary.com/dekggtreb/image/upload/v1637498260/7_Rating_nhvwpb.png"
