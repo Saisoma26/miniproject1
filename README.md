@@ -1,7 +1,4 @@
-In this project let's build a **Tasty Kitchens App** by applying the concepts we have learned till now. This project allows you to practice the concepts and techniques learned till React Course and apply them in a concrete project.
-
-You will demonstrate your skills by creating an app that will fetch data from an internal server using a class component, displaying that data, using **component lifecycle** methods, **routing** concepts, **authentication**, and **authorization**, and adding responsiveness to the website.
-
+In this project let's build a **Tasty Kitchens App**.
 ### Prerequisites
 
 #### UI Prerequisites
@@ -378,13 +375,6 @@ If you complete the main features of the project you can try out the below featu
   - Users should be able to see the restaurant immediate availability time if the restaurant is closed currently.
 
 </details>
-
-### Project Submission Instructions
-
-- For Mini Projects, you can submit the test cases at your own pace. But we suggest you to submit the code to know the percentage of completion through test cases and that score will be considered for your interviews.
-
-- Also it's important to publish your code frequently using `Step - 4` in the Instructions tab.
-
 > ### _Things to Keep in Mind_
 >
 > - All components you implement should go in the `src/components` directory.
