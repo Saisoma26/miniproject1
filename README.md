@@ -354,29 +354,3 @@ Below Instructions are needed to pass the test cases.
     ```
 
 </details>
-
-### Stretch Goals
-
-If you complete the main features of the project you can try out the below features as well.
-
-**Note:** Just a reminder the additional functionality is just extra practice using the tools we have learned. These are not required. If you do not reach the stretch goals, don't worry.
-
-<details>
-<summary>Additional Functionality to be added</summary>
-
-- Profile Route
-  - Users should be able to select and view basic profile details using the Profile in the navbar in a separate page.
-- Search Functionality
-  - Users should be able to search for popular restaurants.
-  - Users should be able to browse search results using pagination buttons.
-  - When the user provides the restaurant name which is not in the database then the No results view should be displayed.
-  - When the users click a restaurant, it should open a new page with respective restaurant details.
-- Restaurants Availability Route
-  - Users should be able to see the restaurant immediate availability time if the restaurant is closed currently.
-
-</details>
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
