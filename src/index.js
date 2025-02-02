@@ -5,7 +5,7 @@ import App from './App'
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/miniproject1">
       <App />
     </BrowserRouter>
   </React.StrictMode>,
