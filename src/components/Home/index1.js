@@ -1,5 +1,5 @@
 import Loader from 'react-loader-spinner'
-import Cookies from 'js-cookie'
+// import Cookies from 'js-cookie'
 import {Component} from 'react'
 import NavbarEl from '../NavbarEl'
 import Footer from '../Footer'
@@ -65,7 +65,9 @@ class Home extends Component {
 
   getrestaurantsdetails = async () => {
     this.setState({fetchStatus: apistatuslist.loading})
-    const jwtToken = Cookies.get('jwt_token')
+    const jwtToken =
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsIiwicm9sZSI6IlBSSU1FX1VTRVIiLCJpYXQiOjE2MjMwNjU1MzJ9.D13s5wN3Oh59aa_qtXMo3Ec4wojOx0EZh8Xr5C5sRkU'
+    // const jwtToken = Cookies.get('jwt_token')
     const {activePage, sortOption} = this.state
     console.log(sortOption)
     const offset = (activePage - 1) * 9
@@ -179,7 +181,7 @@ class Home extends Component {
           <div className="pagination">
             <button
               className="pagination-buttons"
-              testid="pagination-left-button"
+              data-testid="pagination-left-button"
               type="button"
               onClick={this.backPage}
             >
@@ -190,12 +192,12 @@ class Home extends Component {
               />
             </button>
             <p className="activepage-number">
-              <span testid="active-page-number">{activePage} </span> of{' '}
+              <span data-testid="active-page-number">{activePage} </span> of{' '}
               {totalPages}{' '}
             </p>
             <button
               className="pagination-buttons"
-              testid="pagination-right-button"
+              data-testid="pagination-right-button"
               type="button"
               onClick={this.frontPage}
             >
@@ -212,7 +214,7 @@ class Home extends Component {
   }
 
   renderLoader = () => (
-    <div testid="restaurants-list-loader" className="home-loader">
+    <div data-testid="restaurants-list-loader" className="home-loader">
       <Loader type="TailSpin" height={40} width={40} color="#F7931E" />
     </div>
   )

@@ -83,7 +83,7 @@ class OrderDetails extends Component {
             )
             const {imageUrl, cost, quantity, name} = storedItem[0]
             return (
-              <li className="order-container" testid="cartItem">
+              <li className="order-container" data-testid="cartItem">
                 <img
                   src={imageUrl}
                   alt="item-picname"
@@ -96,18 +96,18 @@ class OrderDetails extends Component {
                       className="incredecre-btn"
                       type="button"
                       onClick={decrement}
-                      testid="decrement-quantity"
+                      data-testid="decrement-quantity"
                     >
                       -
                     </button>
-                    <p className="order-quantity" testid="item-quantity">
+                    <p className="order-quantity" data-testid="item-quantity">
                       {count}
                     </p>
                     <button
                       className="incredecre-btn"
                       type="button"
                       onClick={increment}
-                      testid="increment-quantity"
+                      data-testid="increment-quantity"
                     >
                       +
                     </button>

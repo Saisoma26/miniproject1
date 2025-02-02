@@ -1,8 +1,8 @@
 import Loader from 'react-loader-spinner'
 import {Component} from 'react'
-import Navbar from '../Navbar'
 import Footer from '../Footer'
-import Carousel from '../Carousel'
+import Carousel from '../CarouselEl'
+import Navbar from '../NavbarEl'
 import RestaurantCard from '../RestaurantCard'
 import './index.css'
 
@@ -151,7 +151,7 @@ class Home extends Component {
         <div className="pagination">
           <button
             className="pagination-buttons"
-            testid="left-pagination-button"
+            data-testid="left-pagination-button"
             type="button"
             onClick={this.backPage}
           >
@@ -162,12 +162,12 @@ class Home extends Component {
             />
           </button>
           <p className="activepage-number">
-            <span testid="active-page-number">{activePage} </span> of{' '}
+            <span data-testid="active-page-number">{activePage} </span> of{' '}
             {totalPages}
           </p>
           <button
             className="pagination-buttons"
-            testid="right-pagination-button"
+            data-testid="right-pagination-button"
             type="button"
             onClick={this.frontPage}
           >
@@ -184,7 +184,7 @@ class Home extends Component {
   }
 
   renderLoader = () => (
-    <div testid="restaurants-list-loader" className="loader">
+    <div data-testid="restaurants-list-loader" className="loader">
       <Loader type="spinner" height={53.33} width={53.33} color="#F7931E" />
     </div>
   )

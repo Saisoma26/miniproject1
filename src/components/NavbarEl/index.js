@@ -8,7 +8,7 @@ class NavbarEl extends Component {
     const {history} = this.props
     Cookies.remove('jwt_token')
     localStorage.removeItem('cartData')
-    history.replace('/login')
+    history.replace('/')
   }
 
   render() {
@@ -35,7 +35,7 @@ class NavbarEl extends Component {
               Cart
             </Link>
           </li>
-          <li className="list-item3">
+          {/* <li className="list-item3">
             <button
               className="logout-button"
               type="button"
@@ -43,7 +43,7 @@ class NavbarEl extends Component {
             >
               Logout
             </button>
-          </li>
+          </li> */}
         </ul>
       </div>
     )

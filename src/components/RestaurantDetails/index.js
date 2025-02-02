@@ -1,4 +1,4 @@
-import Cookies from 'js-cookie'
+// import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
 import {Component} from 'react'
 import NotFound from '../NotFound'
@@ -46,7 +46,9 @@ class RestaurantDetails extends Component {
   })
 
   getRestaurantDetails = async () => {
-    const accesstoken = Cookies.get('jwt_token')
+    const accesstoken =
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsIiwicm9sZSI6IlBSSU1FX1VTRVIiLCJpYXQiOjE2MjMwNjU1MzJ9.D13s5wN3Oh59aa_qtXMo3Ec4wojOx0EZh8Xr5C5sRkU'
+    // const accesstoken = Cookies.get('jwt_token')
     this.setState({fetchStatus: apistatuslist.loading})
     const {match} = this.props
     const {params} = match
@@ -64,6 +66,7 @@ class RestaurantDetails extends Component {
     if (response.ok) {
       const data = await response.json()
       const updatedData = this.dataConversion(data)
+      console.log('data in restaurant details page', updatedData)
       this.setState({
         restaurantDetails: updatedData,
         fetchStatus: apistatuslist.success,
@@ -127,7 +130,7 @@ class RestaurantDetails extends Component {
 
   renderLoaderview = () => (
     <div
-      testid="restaurant-details-loader"
+      data-testid="restaurant-details-loader"
       className="restaurant-details-loader"
     >
       <Loader type="TailSpin" height={40} width={40} color="#F7931E" />

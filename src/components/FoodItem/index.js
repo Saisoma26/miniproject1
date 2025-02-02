@@ -83,18 +83,18 @@ class FoodItem extends Component {
           className="incredecre-btn"
           type="button"
           onClick={this.decrement}
-          testid="decrement-count"
+          data-testid="decrement-count"
         >
           ad -
         </button>
-        <p className="itemcount" testid="active-count">
+        <p className="itemcount" data-testid="active-count">
           {count}
         </p>
         <button
           className="incredecre-btn"
           type="button"
           onClick={this.increment}
-          testid="increment-count"
+          data-testid="increment-count"
         >
           -
         </button>
@@ -106,7 +106,7 @@ class FoodItem extends Component {
     const {itemdetails} = this.state
     const {name, cost, rating, imageUrl} = itemdetails
     return (
-      <li className="list-food-item" testid="foodItem">
+      <li className="list-food-item" data-testid="foodItem">
         <img src="" alt="food item" className="each-food-item-image" />
         <div className="food-item-details">
           <h1 className="food-item-name">{name}</h1>

@@ -20,11 +20,11 @@ class FoodItem extends Component {
       if (itemdetailsInLocalStorage.length !== 0) {
         this.setState({
           isactive: true,
-          itemdetails: itemdetailsInLocalStorage[0],
+          // itemdetails: itemdetailsInLocalStorage[0],
           count: itemdetailsInLocalStorage[0].quantity,
         })
       } else {
-        this.setState({itemdetails: foodItem})
+        // this.setState({itemdetails: foodItem})
       }
     }
   }
@@ -66,6 +66,7 @@ class FoodItem extends Component {
   additemElement = () => {
     const {count, isactive} = this.state
     const {foodItem} = this.props
+    console.log(isactive)
     if (count < 1) {
       return (
         <CartContext.Consumer>
@@ -105,17 +106,17 @@ class FoodItem extends Component {
                 className="incredecre-btn"
                 type="button"
                 onClick={decrement}
-                testid="decrement-count"
+                data-testid="decrement-count"
               >
                 -
               </button>
-              <p className="itemcount" testid="active-count">
+              <p className="itemcount" data-testid="active-count">
                 {count}
               </p>
               <button
                 type="button"
                 onClick={increment}
-                testid="increment-count"
+                data-testid="increment-count"
               >
                 +
               </button>
@@ -130,7 +131,7 @@ class FoodItem extends Component {
     const {foodItem, restuarantRating} = this.props
     const {name, cost, imageUrl} = foodItem
     return (
-      <li className="list-food-item" testid="foodItem">
+      <li className="list-food-item" data-testid="foodItem">
         <img src={imageUrl} alt="food item" className="each-food-item-image" />
         <div className="food-item-details">
           <h1 className="food-item-name">{name}</h1>

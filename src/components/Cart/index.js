@@ -56,7 +56,7 @@ class Cart extends Component {
           return (
             <div className="total-container">
               <h1 className="total-heading">Order Total: </h1>
-              <p className="total-price" testid="total-price">
+              <p className="total-price" data-testid="total-price">
                 Rs.{sum}
               </p>
             </div>

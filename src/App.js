@@ -1,9 +1,7 @@
 import {Route, Switch, Redirect} from 'react-router-dom'
 import {Component} from 'react'
-import Login from './components/Login/index1'
 import Home from './components/Home/index1'
 import NotFound from './components/NotFound'
-import ProtectedRoute from './components/ProtectedRoute/index1'
 import './App.css'
 import RestaurantDetails from './components/RestaurantDetails'
 import Cart from './components/Cart'
@@ -103,15 +101,10 @@ class App extends Component {
         }}
       >
         <Switch>
-          <Route exact path="/login" component={Login} />
-          <ProtectedRoute exact path="/" component={Home} />
-          <ProtectedRoute
-            exact
-            path="/restaurant/:id"
-            component={RestaurantDetails}
-          />
-          <ProtectedRoute exact path="/cart" component={Cart} />
-          <ProtectedRoute exact path="/bad-path" component={NotFound} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/restaurant/:id" component={RestaurantDetails} />
+          <Route exact path="/cart" component={Cart} />
+          <Route exact path="/bad-path" component={NotFound} />
           <Redirect to="/bad-path" />
         </Switch>
       </CartContext.Provider>

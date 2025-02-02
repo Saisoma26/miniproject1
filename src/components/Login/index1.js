@@ -17,6 +17,7 @@ class Login extends Component {
 
   onSuccessfetch = data => {
     const jwtToken = data.jwt_token
+    console.log(jwtToken)
     Cookies.set('jwt_token', jwtToken, {expires: 30})
     const {history} = this.props
     history.replace('/')

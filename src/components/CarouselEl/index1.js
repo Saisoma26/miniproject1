@@ -1,5 +1,5 @@
 import Loader from 'react-loader-spinner'
-import Cookies from 'js-cookie'
+// import Cookies from 'js-cookie'
 import {Component} from 'react'
 import Slider from 'react-slick'
 import CarouselImage from '../CarouselImage'
@@ -27,7 +27,9 @@ class CarouselEl extends Component {
 
   getcarouselElemnets = async () => {
     this.setState({fetchStatus: apiStatusList.loading})
-    const accessToken = Cookies.get('jwt_token')
+    const accessToken =
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsIiwicm9sZSI6IlBSSU1FX1VTRVIiLCJpYXQiOjE2MjMwNjU1MzJ9.D13s5wN3Oh59aa_qtXMo3Ec4wojOx0EZh8Xr5C5sRkU'
+    // const accessToken = Cookies.get('jwt_token')
     const url = 'https://apis.ccbp.in/restaurants-list/offers'
     const options = {
       method: 'GET',
@@ -51,7 +53,7 @@ class CarouselEl extends Component {
 
   renderloader = () => (
     <div
-      testid="restaurants-offers-loader"
+      data-testid="restaurants-offers-loader"
       className="restaurant-offers-loader"
     >
       <Loader type="TailSpin" height={50} width={50} color="#F7931E" />
@@ -62,7 +64,6 @@ class CarouselEl extends Component {
 
   renderCarouselElements = () => {
     const {carousellist} = this.state
-    console.log(carousellist)
     const settings = {
       dots: true,
     }
